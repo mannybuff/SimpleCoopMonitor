@@ -1,0 +1,3 @@
+Chicken,Rosa,Female,25
+Chicken,Carl,Male,0
+250,Construction,250,Feed,100,Misc

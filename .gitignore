@@ -1,0 +1,17 @@
+# Executables and build artifacts
+main
+main-debug
+*.o
+*.exe
+
+# Temporary files
+*.tmp
+*.bak
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+.vscode/
+.idea/
