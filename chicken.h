@@ -1,22 +1,21 @@
 #pragma once
-#include "function.h"
-using namespace std;
+#include "animal.h"
+#include <string>
+#include <iostream>
 
 class Chicken : public Animal {
-  protected:
-    
+protected:
     int eggsLayed;
 
-  public:
+public:
     Chicken();
-    Chicken(string newType, string newName, string newSex, int newEggsLayed);
+    Chicken(std::string newType, std::string newName, std::string newSex, int newEggsLayed);
 
-    string getType() const override;
+    std::string getType() const override;
     int getEggsLayed() const;
-     
-  
+
     void setEggsLayed(int newEggsLayed);
     void incEggsLayed(int incEggs);
-    void printAnimal(ostream& o);
+    void printAnimal(std::ostream& o) override;
     ~Chicken() {}
 };

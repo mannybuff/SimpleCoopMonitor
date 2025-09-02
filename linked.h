@@ -1,23 +1,25 @@
 #pragma once
-#include "function.h"
-using namespace std;
+#include "animal.h"
+#include <string>
+#include <iostream>
 
 struct Node {
-  Animal* data;
-  Node* nextPtr;
+    Animal* data;
+    Node* nextPtr;
 };
 
 class Linked {
-  protected:
+protected:
     Node* headPtr;
     Node* tailPtr;
-  public:
+
+public:
     Linked();
     ~Linked();
     virtual void addNode(Animal* d);  	
     virtual void addNodeOrdered(Animal* d);
     Node* getHeadPtr();
-    void delNode(string name);
-    void printList(ostream& o);
-    void printSelected(string key);
+    void delNode(std::string name);
+    void printList(std::ostream& o);
+    void printSelected(std::string key);
 };

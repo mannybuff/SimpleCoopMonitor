@@ -1,26 +1,25 @@
 #pragma once
-#include "function.h"
-using namespace std;
+#include <string>
+#include <iostream>
 
 class Animal {
-  protected:
-    string type;
-    string name;
-    string sex;
+protected:
+    std::string type;
+    std::string name;
+    std::string sex;
 
-  public:
+public:
     Animal();
-    Animal(string newType, string newName, string newSex);
+    Animal(std::string newType, std::string newName, std::string newSex);
 
-    virtual string getType() const = 0;
-    string getName() const;
-    string getSex() const;
+    virtual std::string getType() const = 0;
+    std::string getName() const;
+    std::string getSex() const;
 
-    void setType(string newType);
-    void setName(string newName);
-    void setSex(string newSex);
-    void printAnimal(ostream& o);
+    void setType(std::string newType);
+    void setName(std::string newName);
+    void setSex(std::string newSex);
+    void printAnimal(std::ostream& o);
 
     virtual ~Animal() {}
-
 };
